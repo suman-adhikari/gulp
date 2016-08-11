@@ -1,0 +1,38 @@
+Install Gulp
+Reference
+http://omcfarlane.co.uk/install-gulp-js-windows/
+
+Install Gulp in project
+
+1.Go to the project root directory
+2. cmd>npm install gulp (now gulp is installed locally on your project)
+3. download gulpfile.js and place in root directory
+4  cmd> gulp ..cannot find module 'gulp-something'
+5  install that missing module : cmd> npm install gulp-something
+6  Type gulp and install msiing modeules one by one.
+
+Insted of installing modules one by one you call install all required modules at once.
+
+make a package.json file in root directory and include all modules name as
+package.json
+{
+    "name": "MyProject",
+    "version": "1.0.0",
+    "dependencies": {
+        "gulp": "*",
+        "gulp-ruby-sass": "*",
+        "gulp-util": "*",
+        "gulp-rename": "*",
+        "map-stream": "*",
+        "gulp-livereload": "*",
+        "gulp-concat": "*",
+        "gulp-uglify": "*",
+        "gulp-watch": "*"
+    }
+}
+
+now CMD> npm install , it will install all dependencies.
+
+Your gulp is ready now use it the way you want.
+
+Check gulpfile.js and package.json in this same folder.
